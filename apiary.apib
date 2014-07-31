@@ -34,6 +34,30 @@ Notes related resources of the **Notes API**
           "id": 3, "title": "Pick-up posters from post-office 2"
         }]
 
+
++ Response 210 (application/json)
+
+    ﻿+ Body
+
+        { "id": 2, "title": "Pick-up posters from post-office" }
+            
+    + Schema
+        
+            {
+                "type": "object",
+                "required": false,
+                "properties": {
+                    "title": {
+                        "type": ["string", "null"],
+                        "required": false
+                    },
+                    "id": {
+                        "type": "number",
+                        "required": true
+                        }
+                    }
+            }
+
 ### Create a Note [POST]
 
 + Request A (application/json)
