@@ -35,13 +35,22 @@ Notes related resources of the **Notes API**
         }]
 
 ### Create a Note [POST]
-+ Request (application/json)
+
++ Request A (application/json)
 
         { "title": "Buy cheese and bread for breakfast." }
 
 + Response 201 (application/json)
 
         { "id": 3, "title": "Buy cheese and bread for breakfast." }
+
++ Request B (application/json)
+
+        { "title": "Buy cheese and bread for breakfast. 2" }
+
++ Response 201 (application/json)
+
+        { "id": 3, "title": "Buy cheese and bread for breakfast. 2" }
 
 ## Note [/notes/{id}]
 A single Note object with all its details
@@ -60,6 +69,7 @@ A single Note object with all its details
 
             { "id": 2, "title": "Pick-up posters from post-office" }
             
+
 + Response 404 (application/json)            
 
 ### Remove a Note [DELETE]
